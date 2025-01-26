@@ -9,8 +9,8 @@ export const exercises: Exercise[] = [
   {
     id: 1,
     name: "Cook Hip Lift",
-    description: "Lie on your back, lift hips while keeping core engaged",
-    animation: "🏋️‍♂️", // Bridge exercise animation
+    description: "Lie on your back with knees bent, lift hips while keeping core engaged",
+    animation: "🦵", // Changed to leg emoji to better represent the exercise
   },
   {
     id: 2,
