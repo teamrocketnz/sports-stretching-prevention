@@ -9,7 +9,7 @@ interface ExerciseDisplayProps {
 const ExerciseDisplay: React.FC<ExerciseDisplayProps> = ({ exercise }) => {
   return (
     <Card className="p-6 space-y-4">
-      <div className={`text-6xl ${exercise.id === 1 ? 'animate-hip-lift' : 'animate-bounce'}`}>
+      <div className="text-6xl">
         {exercise.animation}
       </div>
       <h2 className="text-2xl font-bold">{exercise.name}</h2>
