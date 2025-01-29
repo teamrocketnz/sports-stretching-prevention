@@ -147,4 +147,10 @@ export const shinSplintExercises: Exercise[] = [
     description: "Gently massage up and down your shins with your thumbs. Spend 1 minute on each leg.",
     animation: "👐",
   },
+  {
+    id: 2,
+    name: "Seated Shin Stretch",
+    description: "Sit with your legs extended. Point your toes forward, then flex them back. Hold each position for 15-20 seconds.",
+    animation: "🧘‍♂️",
+  },
 ];
