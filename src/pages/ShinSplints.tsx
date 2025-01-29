@@ -42,7 +42,7 @@ const ShinSplints = () => {
           <ExerciseDisplay exercise={exercises[currentExerciseIndex]} />
           
           <Timer 
-            duration={25} 
+            duration={60} 
             isPlaying={isPlaying} 
             onComplete={handleNext}
           />
