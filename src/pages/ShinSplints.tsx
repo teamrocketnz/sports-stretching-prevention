@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { PlayCircle, PauseCircle, SkipForward, SkipBack } from "lucide-react";
 import Timer from "@/components/Timer";
 import ExerciseDisplay from "@/components/ExerciseDisplay";
-import { exercises } from "@/data/exercises";
+import { shinSplintExercises } from "@/data/exercises";
 
 const ShinSplints = () => {
   const [currentExerciseIndex, setCurrentExerciseIndex] = useState(0);
@@ -11,14 +11,14 @@ const ShinSplints = () => {
 
   const handleNext = () => {
     setCurrentExerciseIndex((prev) => 
-      prev === exercises.length - 1 ? 0 : prev + 1
+      prev === shinSplintExercises.length - 1 ? 0 : prev + 1
     );
     setIsPlaying(true);
   };
 
   const handlePrevious = () => {
     setCurrentExerciseIndex((prev) => 
-      prev === 0 ? exercises.length - 1 : prev - 1
+      prev === 0 ? shinSplintExercises.length - 1 : prev - 1
     );
     setIsPlaying(true);
   };
@@ -36,10 +36,10 @@ const ShinSplints = () => {
         
         <div className="bg-white rounded-lg p-6 shadow-xl space-y-6">
           <div className="text-center text-sm text-gray-600">
-            Exercise {currentExerciseIndex + 1} of {exercises.length}
+            Exercise {currentExerciseIndex + 1} of {shinSplintExercises.length}
           </div>
           
-          <ExerciseDisplay exercise={exercises[currentExerciseIndex]} />
+          <ExerciseDisplay exercise={shinSplintExercises[currentExerciseIndex]} />
           
           <Timer 
             duration={60} 

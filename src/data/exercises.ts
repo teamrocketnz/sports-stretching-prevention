@@ -8,18 +8,12 @@ export interface Exercise {
 export const exercises: Exercise[] = [
   {
     id: 1,
-    name: "Shin Massage",
-    description: "Gently massage up and down your shins with your thumbs. Spend 1 minute on each leg.",
-    animation: "👐",
-  },
-  {
-    id: 2,
     name: "Cook Hip Lift",
     description: "Lie on your back with knees bent, lift hips while keeping core engaged",
     animation: "🦵", // Changed to leg emoji to better represent the exercise
   },
   {
-    id: 3,
+    id: 2,
     name: "Hip Mobility",
     description: "Rotate hips in circular motion while standing",
     animation: "🔄", // Rotating movement
@@ -143,5 +137,14 @@ export const exercises: Exercise[] = [
     name: "Triple Cuts",
     description: "Quick lateral movements with direction changes",
     animation: "⚡", // Quick movement
+  },
+];
+
+export const shinSplintExercises: Exercise[] = [
+  {
+    id: 1,
+    name: "Shin Massage",
+    description: "Gently massage up and down your shins with your thumbs. Spend 1 minute on each leg.",
+    animation: "👐",
   },
 ];
