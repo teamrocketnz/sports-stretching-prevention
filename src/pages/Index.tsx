@@ -31,7 +31,7 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-to-br from-primary to-secondary p-6">
       <div className="max-w-md mx-auto space-y-6">
         <h1 className="text-3xl font-bold text-white text-center mb-8">
-          Stretch Timer
+          Pre-Game Dynamic Stretches
         </h1>
         
         <div className="bg-white rounded-lg p-6 shadow-xl space-y-6">
