@@ -140,6 +140,39 @@ export const exercises: Exercise[] = [
   },
 ];
 
+export const jumpersKneeExercises: Exercise[] = [
+  {
+    id: 1,
+    name: "Cross Friction Massage",
+    description: "Apply gentle cross-friction massage to the patellar tendon. Massage for 2-3 minutes, focusing on tender areas.",
+    animation: "👐",
+  },
+  {
+    id: 2,
+    name: "Patellar Mobilization",
+    description: "Gently move your kneecap in all directions (up, down, side to side) while keeping your leg relaxed. Perform for 1-2 minutes.",
+    animation: "🦿",
+  },
+  {
+    id: 3,
+    name: "Sidelying Quad Stretch",
+    description: "Lie on your side, bend your top knee and hold your ankle. Pull gently to feel a stretch in front of your thigh. Hold for 30 seconds.",
+    animation: "🧘‍♂️",
+  },
+  {
+    id: 4,
+    name: "Standing Quad Stretch",
+    description: "Stand on one leg, bend your other knee and hold your ankle behind you. Keep your knees close together. Hold for 30 seconds.",
+    animation: "🧍‍♂️",
+  },
+  {
+    id: 5,
+    name: "Straight Leg Raise",
+    description: "Lie on your back, keep one leg straight and raise it about 6 inches off the ground. Hold for 5 seconds. Perform 10 repetitions.",
+    animation: "🦵",
+  },
+];
+
 export const shinSplintExercises: Exercise[] = [
   {
     id: 1,
