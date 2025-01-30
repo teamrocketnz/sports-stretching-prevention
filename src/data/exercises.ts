@@ -140,6 +140,105 @@ export const exercises: Exercise[] = [
   },
 ];
 
+export const generalStretchingExercises: Exercise[] = [
+  {
+    id: 1,
+    name: "Laying down Lumber Rotation Left",
+    description: "Lie on your back, keep shoulders flat, and rotate knees to the left side. Hold for 30 seconds.",
+    animation: "🔄",
+  },
+  {
+    id: 2,
+    name: "Laying down Lumber Rotation Right",
+    description: "Lie on your back, keep shoulders flat, and rotate knees to the right side. Hold for 30 seconds.",
+    animation: "🔄",
+  },
+  {
+    id: 3,
+    name: "Laying down Hamstring Stretch",
+    description: "Lie on your back, lift one leg straight up while keeping the other flat. Hold for 30 seconds per leg.",
+    animation: "🦵",
+  },
+  {
+    id: 4,
+    name: "Piriformis Stretch Left",
+    description: "Lie on your back, cross left ankle over right knee, pull right thigh toward chest. Hold 30 seconds.",
+    animation: "🧘‍♂️",
+  },
+  {
+    id: 5,
+    name: "Piriformis Stretch Right",
+    description: "Lie on your back, cross right ankle over left knee, pull left thigh toward chest. Hold 30 seconds.",
+    animation: "🧘‍♂️",
+  },
+  {
+    id: 6,
+    name: "Tall Kneeling Hip Flexor Stretch Left",
+    description: "Kneel tall, step left foot forward, lean forward while keeping back straight. Hold 30 seconds.",
+    animation: "🧎‍♂️",
+  },
+  {
+    id: 7,
+    name: "Kneeling Hamstring Stretch Left",
+    description: "Kneel on right knee, extend left leg forward, lean forward from hips. Hold 30 seconds.",
+    animation: "🧎‍♂️",
+  },
+  {
+    id: 8,
+    name: "Tall Kneeling Hip Flexor Stretch Right",
+    description: "Kneel tall, step right foot forward, lean forward while keeping back straight. Hold 30 seconds.",
+    animation: "🧎‍♂️",
+  },
+  {
+    id: 9,
+    name: "Kneeling Hamstring Stretch Right",
+    description: "Kneel on left knee, extend right leg forward, lean forward from hips. Hold 30 seconds.",
+    animation: "🧎‍♂️",
+  },
+  {
+    id: 10,
+    name: "Seated Spine Rotation Stretch Left",
+    description: "Sit cross-legged, place right hand on left knee, rotate torso left. Hold 30 seconds.",
+    animation: "🧘‍♀️",
+  },
+  {
+    id: 11,
+    name: "Seated Spine Rotation Stretch Right",
+    description: "Sit cross-legged, place left hand on right knee, rotate torso right. Hold 30 seconds.",
+    animation: "🧘‍♀️",
+  },
+  {
+    id: 12,
+    name: "Easy Pose Forward Fold",
+    description: "Sit cross-legged, fold forward from hips, reaching arms forward. Hold 30 seconds.",
+    animation: "🧘‍♀️",
+  },
+  {
+    id: 13,
+    name: "Happy Cow",
+    description: "On hands and knees, arch back while looking up, then round back while looking down.",
+    animation: "🐄",
+  },
+  {
+    id: 14,
+    name: "Pigeon Pose",
+    description: "From all fours, bring one leg forward into a bent position while extending back leg. Hold each side 30 seconds.",
+    animation: "🕊️",
+  },
+  {
+    id: 15,
+    name: "Butterfly Pose",
+    description: "Sit with feet together, knees out. Hold feet and lean forward. Hold 30 seconds.",
+    animation: "🦋",
+  },
+  {
+    id: 16,
+    name: "Frog Pose",
+    description: "Kneel with knees wide, feet together. Keep back straight and lean forward. Hold 30 seconds.",
+    animation: "🐸",
+  },
+];
+
 export const jumpersKneeExercises: Exercise[] = [
   {
     id: 1,
