@@ -20,6 +20,13 @@ const Index = () => {
           <div className="space-y-3">
             <Button 
               className="w-full bg-primary hover:bg-primary/90"
+              onClick={() => navigate("/dynamic")}
+            >
+              Dynamic Stretches
+            </Button>
+
+            <Button 
+              className="w-full bg-primary hover:bg-primary/90"
               onClick={() => navigate("/general-stretching")}
             >
               General Stretching
