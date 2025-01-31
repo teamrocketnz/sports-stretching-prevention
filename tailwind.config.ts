@@ -25,17 +25,35 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#2D3B55",
+          DEFAULT: "#0EA5E9",
           foreground: "#ffffff",
+          hover: "#0284C7",
         },
         secondary: {
-          DEFAULT: "#3CAEA3",
+          DEFAULT: "#8B5CF6",
           foreground: "#ffffff",
+          hover: "#7C3AED",
         },
         accent: {
-          DEFAULT: "#F6D55C",
-          foreground: "#000000",
+          DEFAULT: "#F97316",
+          foreground: "#ffffff",
+          hover: "#EA580C",
         },
+        neutral: {
+          100: "#F1F0FB",
+          200: "#E2E8F0",
+          300: "#CBD5E1",
+          400: "#94A3B8",
+        }
+      },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        heading: ['Poppins', 'sans-serif'],
+      },
+      backgroundImage: {
+        'gradient-primary': 'linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%)',
+        'gradient-secondary': 'linear-gradient(90deg, hsla(277, 75%, 84%, 1) 0%, hsla(297, 50%, 51%, 1) 100%)',
+        'gradient-accent': 'linear-gradient(90deg, hsla(24, 100%, 83%, 1) 0%, hsla(341, 91%, 68%, 1) 100%)',
       },
       keyframes: {
         "slide-in": {
@@ -46,10 +64,15 @@ export default {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-100%)" },
         },
+        "pulse-subtle": {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0.8" },
+        },
       },
       animation: {
         "slide-in": "slide-in 0.3s ease-out",
         "slide-out": "slide-out 0.3s ease-out",
+        "pulse-subtle": "pulse-subtle 2s ease-in-out infinite",
       },
     },
   },

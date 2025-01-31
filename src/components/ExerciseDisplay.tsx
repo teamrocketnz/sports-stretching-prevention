@@ -1,6 +1,7 @@
 import React from "react";
 import { Exercise } from "@/data/exercises";
 import { Card } from "@/components/ui/card";
+import { motion } from "framer-motion";
 
 interface ExerciseDisplayProps {
   exercise: Exercise;
@@ -8,20 +9,33 @@ interface ExerciseDisplayProps {
 
 const ExerciseDisplay: React.FC<ExerciseDisplayProps> = ({ exercise }) => {
   return (
-    <Card className="p-6 space-y-4">
-      <div className="text-6xl">
-        {exercise.animation}
-      </div>
-      <h2 className="text-2xl font-bold">{exercise.name}</h2>
-      <p className="text-gray-600">{exercise.description}</p>
-      {exercise.id === 1 && (
-        <img 
-          src="/lovable-uploads/a99b461e-b748-498f-ae4d-bdfff449286c.png" 
-          alt="Cook Hip Lift demonstration" 
-          className="w-48 mx-auto mt-4"
-        />
-      )}
-    </Card>
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -20 }}
+      transition={{ duration: 0.3 }}
+    >
+      <Card className="overflow-hidden bg-white/10 backdrop-blur-lg border-white/20">
+        <div className="p-6 space-y-4">
+          <div className="text-6xl flex justify-center items-center h-24">
+            {exercise.animation}
+          </div>
+          <h2 className="text-2xl font-heading font-bold text-white">
+            {exercise.name}
+          </h2>
+          <p className="text-neutral-100">
+            {exercise.description}
+          </p>
+          {exercise.id === 1 && (
+            <img 
+              src="/lovable-uploads/a99b461e-b748-498f-ae4d-bdfff449286c.png" 
+              alt="Cook Hip Lift demonstration" 
+              className="w-48 mx-auto mt-4 rounded-lg shadow-lg"
+            />
+          )}
+        </div>
+      </Card>
+    </motion.div>
   );
 };
 
