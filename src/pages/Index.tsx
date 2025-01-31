@@ -5,7 +5,6 @@ import {
   Dumbbell, 
   Activity, 
   Footprints, 
-  KneeSide, 
   ChevronRight 
 } from "lucide-react";
 
@@ -50,7 +49,7 @@ const Index = () => {
             {
               title: "Jumper's Knee",
               description: "Strengthen and protect your knee joints",
-              icon: <KneeSide className="w-6 h-6" />,
+              icon: <Dumbbell className="w-6 h-6" />,
               path: "/jumpers-knee",
               gradient: "from-green-400 to-green-600",
             },
