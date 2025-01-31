@@ -15,7 +15,7 @@ const ExerciseDisplay: React.FC<ExerciseDisplayProps> = ({ exercise }) => {
       exit={{ opacity: 0, y: -20 }}
       transition={{ duration: 0.3 }}
     >
-      <Card className="overflow-hidden bg-white/10 backdrop-blur-lg border-white/20">
+      <Card className="overflow-hidden bg-black/40 backdrop-blur-lg border-white/20">
         <div className="p-6 space-y-4">
           <div className="text-6xl flex justify-center items-center h-24">
             {exercise.animation}
@@ -23,7 +23,7 @@ const ExerciseDisplay: React.FC<ExerciseDisplayProps> = ({ exercise }) => {
           <h2 className="text-2xl font-heading font-bold text-white">
             {exercise.name}
           </h2>
-          <p className="text-neutral-100">
+          <p className="text-white text-base leading-relaxed">
             {exercise.description}
           </p>
           {exercise.id === 1 && (
