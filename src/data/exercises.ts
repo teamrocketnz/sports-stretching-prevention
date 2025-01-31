@@ -326,5 +326,11 @@ export const shinSplintExercises: Exercise[] = [
     name: "Balancing Exercises",
     description: "Stand on one leg for 30 seconds, then switch. Progress to closing eyes or standing on unstable surfaces.",
     animation: "🧘‍♂️",
+  },
+  {
+    id: 10,
+    name: "Walking on Heels",
+    description: "Walk on your heels with toes pointed up for 30 seconds. This helps strengthen the muscles in the front of your lower legs.",
+    animation: "🚶",
   }
 ];
