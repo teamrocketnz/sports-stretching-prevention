@@ -3,6 +3,13 @@ import { motion } from "framer-motion";
 import { Trophy } from "lucide-react";
 import { toast } from "@/components/ui/use-toast";
 
+const placeholderImages = [
+  "/placeholder.svg",
+  "https://source.unsplash.com/random/200x200?nature",
+  "https://source.unsplash.com/random/200x200?abstract",
+  "https://source.unsplash.com/random/200x200?pattern"
+];
+
 interface FrisbeeRewardProps {
   isVisible: boolean;
 }
@@ -23,6 +30,7 @@ const FrisbeeReward: React.FC<FrisbeeRewardProps> = ({ isVisible }) => {
   // Generate random gradient colors for the frisbee
   const color1 = `hsl(${Math.random() * 360}, 70%, 50%)`;
   const color2 = `hsl(${Math.random() * 360}, 70%, 50%)`;
+  const randomImage = placeholderImages[Math.floor(Math.random() * placeholderImages.length)];
 
   return (
     <motion.div
@@ -37,12 +45,29 @@ const FrisbeeReward: React.FC<FrisbeeRewardProps> = ({ isVisible }) => {
           transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
           className="relative w-48 h-48 mx-auto"
         >
+          {/* Outer ring */}
+          <div className="absolute inset-0 rounded-full border-8 border-gray-200 shadow-inner" />
+          
+          {/* Main disc with gradient and image */}
           <div
-            className="w-full h-full rounded-full shadow-lg"
+            className="absolute inset-2 rounded-full shadow-lg overflow-hidden"
             style={{
               background: `linear-gradient(45deg, ${color1}, ${color2})`,
             }}
-          />
+          >
+            <img
+              src={randomImage}
+              alt="Frisbee pattern"
+              className="w-full h-full object-cover opacity-40 mix-blend-overlay"
+            />
+            
+            {/* Inner ring */}
+            <div className="absolute inset-8 rounded-full border-4 border-white/30" />
+            
+            {/* Center dot */}
+            <div className="absolute inset-[45%] rounded-full bg-white/30" />
+          </div>
+          
           <motion.div
             className="absolute -top-2 -right-2 bg-gradient-achievement p-2 rounded-full"
             animate={{ scale: [1, 1.2, 1] }}
