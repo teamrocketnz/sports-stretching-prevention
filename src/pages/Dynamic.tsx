@@ -4,16 +4,24 @@ import Timer from "@/components/Timer";
 import ExerciseDisplay from "@/components/ExerciseDisplay";
 import { Button } from "@/components/ui/button";
 import { PlayCircle, PauseCircle, SkipForward, SkipBack } from "lucide-react";
+import FrisbeeReward from "@/components/FrisbeeReward";
 
 const Dynamic = () => {
   const [currentExerciseIndex, setCurrentExerciseIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [showReward, setShowReward] = useState(false);
 
   const handleNext = () => {
-    setCurrentExerciseIndex((prev) => 
-      prev === exercises.length - 1 ? 0 : prev + 1
-    );
+    const nextIndex = currentExerciseIndex === exercises.length - 1 ? 0 : currentExerciseIndex + 1;
+    setCurrentExerciseIndex(nextIndex);
     setIsPlaying(true);
+    
+    // Show reward when completing all exercises
+    if (currentExerciseIndex === exercises.length - 1) {
+      setShowReward(true);
+      // Hide reward after 5 seconds
+      setTimeout(() => setShowReward(false), 5000);
+    }
   };
 
   const handlePrevious = () => {
@@ -66,6 +74,8 @@ const Dynamic = () => {
           </div>
         </div>
       </div>
+      
+      <FrisbeeReward isVisible={showReward} />
     </div>
   );
 };
