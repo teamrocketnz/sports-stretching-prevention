@@ -8,7 +8,6 @@ import Dynamic from "./pages/Dynamic";
 import ShinSplints from "./pages/ShinSplints";
 import JumpersKnee from "./pages/JumpersKnee";
 import GeneralStretching from "./pages/GeneralStretching";
-import Collection from "./pages/Collection";
 
 const queryClient = new QueryClient();
 
@@ -24,7 +23,6 @@ const App = () => (
           <Route path="/shin-splints" element={<ShinSplints />} />
           <Route path="/jumpers-knee" element={<JumpersKnee />} />
           <Route path="/general-stretching" element={<GeneralStretching />} />
-          <Route path="/collection" element={<Collection />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
