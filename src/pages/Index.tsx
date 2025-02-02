@@ -12,7 +12,7 @@ const Index = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-primary to-secondary p-6">
+    <div className="min-h-screen bg-gradient-to-br from-primary to-secondary p-6 relative">
       <div className="max-w-4xl mx-auto space-y-8">
         <header className="text-center space-y-4">
           <h1 className="text-4xl md:text-5xl font-heading font-bold text-white">
@@ -76,6 +76,9 @@ const Index = () => {
             </button>
           ))}
         </div>
+      </div>
+      <div className="absolute bottom-2 right-4 text-white/30 text-xs font-light">
+        by ROBBIE MAC
       </div>
     </div>
   );
