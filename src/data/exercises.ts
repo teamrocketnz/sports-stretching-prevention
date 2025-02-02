@@ -237,6 +237,30 @@ export const generalStretchingExercises: Exercise[] = [
     description: "Kneel with knees wide, feet together. Keep back straight and lean forward. Hold 30 seconds.",
     animation: "🐸",
   },
+  {
+    id: 17,
+    name: "Child's Pose",
+    description: "Kneel on the floor, sit back on heels, extend arms forward, and rest forehead on mat. Hold for 30 seconds.",
+    animation: "🧎",
+  },
+  {
+    id: 18,
+    name: "Cat-Cow Stretch",
+    description: "On hands and knees, alternate between arching and rounding your back while breathing deeply. 10 repetitions.",
+    animation: "🐱",
+  },
+  {
+    id: 19,
+    name: "Thread the Needle",
+    description: "From all fours, slide one arm under your body, rotating to stretch the upper back. Hold 30 seconds each side.",
+    animation: "🧵",
+  },
+  {
+    id: 20,
+    name: "Cobra Pose",
+    description: "Lie face down, place hands under shoulders, gently lift chest while keeping hips on ground. Hold 15-30 seconds.",
+    animation: "🐍",
+  },
 ];
 
 export const jumpersKneeExercises: Exercise[] = [
