@@ -29,13 +29,13 @@ const Dynamic = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-primary to-secondary p-6">
-      <div className="max-w-md mx-auto space-y-6">
+      <div className="max-w-md mx-auto">
         <h1 className="text-3xl font-bold text-white text-center mb-8">
           Pre-Game Dynamic Stretches
         </h1>
         
-        <div className="bg-white rounded-lg p-6 shadow-xl space-y-6">
-          <div className="text-center text-sm text-gray-600">
+        <div className="bg-white rounded-lg p-6 shadow-xl relative">
+          <div className="text-center text-sm text-gray-600 mb-4">
             Exercise {currentExerciseIndex + 1} of {exercises.length}
           </div>
           
@@ -47,12 +47,21 @@ const Dynamic = () => {
             onComplete={handleNext}
           />
           
-          <div className="flex justify-center space-x-4">
-            <Button variant="outline" onClick={handlePrevious}>
-              <SkipBack className="h-6 w-6" />
+          <div className="flex justify-between items-center mt-6">
+            <Button 
+              variant="ghost" 
+              onClick={handlePrevious}
+              className="flex-1 mr-2"
+            >
+              <SkipBack className="mr-2 h-5 w-5" />
+              Previous
             </Button>
             
-            <Button onClick={togglePlay}>
+            <Button 
+              onClick={togglePlay}
+              className="mx-2"
+              size="lg"
+            >
               {isPlaying ? (
                 <PauseCircle className="h-6 w-6" />
               ) : (
@@ -60,8 +69,13 @@ const Dynamic = () => {
               )}
             </Button>
             
-            <Button variant="outline" onClick={handleNext}>
-              <SkipForward className="h-6 w-6" />
+            <Button 
+              variant="ghost" 
+              onClick={handleNext}
+              className="flex-1 ml-2"
+            >
+              Next
+              <SkipForward className="ml-2 h-5 w-5" />
             </Button>
           </div>
         </div>
