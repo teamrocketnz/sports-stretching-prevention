@@ -3,11 +3,12 @@ import { exercises } from "@/data/exercises";
 import Timer from "@/components/Timer";
 import ExerciseDisplay from "@/components/ExerciseDisplay";
 import { Button } from "@/components/ui/button";
-import { PlayCircle, PauseCircle, SkipForward, SkipBack } from "lucide-react";
+import { PlayCircle, PauseCircle, SkipForward, SkipBack, Volume2, VolumeX, RotateCcw } from "lucide-react";
 
 const Dynamic = () => {
   const [currentExerciseIndex, setCurrentExerciseIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [soundEnabled, setSoundEnabled] = useState(true);
 
   const handleNext = () => {
     setCurrentExerciseIndex((prev) => 
@@ -46,36 +47,50 @@ const Dynamic = () => {
             isPlaying={isPlaying} 
             onComplete={handleNext}
           />
-          
-          <div className="flex justify-between items-center gap-2 mt-6">
-            <Button 
-              variant="ghost" 
+
+          {/* Controls */}
+          <div className="flex justify-center items-center gap-4 mt-6">
+            <Button
+              variant="outline"
+              size="icon"
+              onClick={() => setSoundEnabled(!soundEnabled)}
+              className="rounded-full"
+            >
+              {soundEnabled ? <Volume2 /> : <VolumeX />}
+            </Button>
+
+            <Button
+              variant="outline"
+              size="icon"
               onClick={handlePrevious}
-              size="sm"
-              className="flex-none"
+              className="rounded-full"
             >
-              <SkipBack className="h-5 w-5" />
+              <SkipBack />
             </Button>
-            
-            <Button 
+
+            <Button
+              size="icon"
               onClick={togglePlay}
-              size="sm"
-              className="flex-none"
+              className="rounded-full"
             >
-              {isPlaying ? (
-                <PauseCircle className="h-5 w-5" />
-              ) : (
-                <PlayCircle className="h-5 w-5" />
-              )}
+              {isPlaying ? <PauseCircle className="w-6 h-6" /> : <PlayCircle className="w-6 h-6" />}
             </Button>
-            
-            <Button 
-              variant="ghost" 
+
+            <Button
+              variant="outline"
+              size="icon"
               onClick={handleNext}
-              size="sm"
-              className="flex-none"
+              className="rounded-full"
             >
-              <SkipForward className="h-5 w-5" />
+              <SkipForward />
+            </Button>
+
+            <Button
+              variant="outline"
+              size="icon"
+              className="rounded-full"
+            >
+              <RotateCcw />
             </Button>
           </div>
         </div>
