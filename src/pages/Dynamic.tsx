@@ -47,35 +47,35 @@ const Dynamic = () => {
             onComplete={handleNext}
           />
           
-          <div className="flex justify-between items-center mt-6">
+          <div className="flex justify-between items-center gap-2 mt-6">
             <Button 
               variant="ghost" 
               onClick={handlePrevious}
-              className="flex-1 mr-2"
+              size="sm"
+              className="flex-none"
             >
-              <SkipBack className="mr-2 h-5 w-5" />
-              Previous
+              <SkipBack className="h-5 w-5" />
             </Button>
             
             <Button 
               onClick={togglePlay}
-              className="mx-2"
-              size="lg"
+              size="sm"
+              className="flex-none"
             >
               {isPlaying ? (
-                <PauseCircle className="h-6 w-6" />
+                <PauseCircle className="h-5 w-5" />
               ) : (
-                <PlayCircle className="h-6 w-6" />
+                <PlayCircle className="h-5 w-5" />
               )}
             </Button>
             
             <Button 
               variant="ghost" 
               onClick={handleNext}
-              className="flex-1 ml-2"
+              size="sm"
+              className="flex-none"
             >
-              Next
-              <SkipForward className="ml-2 h-5 w-5" />
+              <SkipForward className="h-5 w-5" />
             </Button>
           </div>
         </div>
