@@ -4,8 +4,7 @@ import { Button } from "@/components/ui/button";
 import { 
   Dumbbell, 
   Activity, 
-  Footprints,
-  Trophy,
+  Footprints, 
   ChevronRight 
 } from "lucide-react";
 
@@ -48,10 +47,10 @@ const Index = () => {
               gradient: "from-orange-400 to-orange-600",
             },
             {
-              title: "Collection",
-              description: "View your unlocked frisbee achievements",
-              icon: <Trophy className="w-6 h-6" />,
-              path: "/collection",
+              title: "Jumper's Knee",
+              description: "Strengthen and protect your knee joints",
+              icon: <Dumbbell className="w-6 h-6" />,
+              path: "/jumpers-knee",
               gradient: "from-green-400 to-green-600",
             },
           ].map((item) => (

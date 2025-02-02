@@ -44,11 +44,6 @@ export default {
           200: "#E2E8F0",
           300: "#CBD5E1",
           400: "#94A3B8",
-        },
-        achievement: {
-          gold: "#FFD700",
-          silver: "#C0C0C0",
-          bronze: "#CD7F32",
         }
       },
       fontFamily: {
@@ -59,7 +54,6 @@ export default {
         'gradient-primary': 'linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%)',
         'gradient-secondary': 'linear-gradient(90deg, hsla(277, 75%, 84%, 1) 0%, hsla(297, 50%, 51%, 1) 100%)',
         'gradient-accent': 'linear-gradient(90deg, hsla(24, 100%, 83%, 1) 0%, hsla(341, 91%, 68%, 1) 100%)',
-        'gradient-achievement': 'linear-gradient(135deg, #FFD700 0%, #FFA500 100%)',
       },
       keyframes: {
         "slide-in": {
@@ -74,22 +68,11 @@ export default {
           "0%, 100%": { opacity: "1" },
           "50%": { opacity: "0.8" },
         },
-        "float": {
-          "0%, 100%": { transform: "translateY(0)" },
-          "50%": { transform: "translateY(-10px)" },
-        },
-        "achievement-unlock": {
-          "0%": { transform: "scale(0.8)", opacity: "0" },
-          "50%": { transform: "scale(1.1)", opacity: "0.8" },
-          "100%": { transform: "scale(1)", opacity: "1" },
-        },
       },
       animation: {
         "slide-in": "slide-in 0.3s ease-out",
         "slide-out": "slide-out 0.3s ease-out",
         "pulse-subtle": "pulse-subtle 2s ease-in-out infinite",
-        "float": "float 3s ease-in-out infinite",
-        "achievement-unlock": "achievement-unlock 0.5s ease-out forwards",
       },
     },
   },
