@@ -358,3 +358,48 @@ export const shinSplintExercises: Exercise[] = [
     animation: "🚶",
   }
 ];
+
+export const tibialisPosteriorExercises: Exercise[] = [
+  {
+    id: 1,
+    name: "Foot Adduction",
+    description: "Perform resisted inversion exercises by moving your foot inwards against resistance. This helps strengthen the tibialis posterior muscle.",
+    animation: "🦶",
+  },
+  {
+    id: 2,
+    name: "Heel Raises",
+    description: "Stand on the edge of a step, raise up onto your toes, then lower back down. Can be progressed to single leg or with added weight.",
+    animation: "🦿",
+  },
+  {
+    id: 3,
+    name: "Balance Exercises",
+    description: "Practice single leg stance or use a wobble board to improve proprioception and stability. Start with eyes open, progress to eyes closed.",
+    animation: "🧘‍♂️",
+  },
+  {
+    id: 4,
+    name: "Squats",
+    description: "Perform bodyweight squats focusing on proper form and ankle mobility. Keep weight in heels and maintain good alignment.",
+    animation: "🏋️‍♂️",
+  },
+  {
+    id: 5,
+    name: "Lunges",
+    description: "Step forward into a lunge position, keeping your front knee aligned over your ankle. Return to starting position and alternate legs.",
+    animation: "🧎‍♂️",
+  },
+  {
+    id: 6,
+    name: "Split Squats",
+    description: "Similar to a static lunge, keep one foot forward and one back, lower down and up. Focus on control and stability.",
+    animation: "🏃",
+  },
+  {
+    id: 7,
+    name: "Deadlifts",
+    description: "Perform deadlifts with proper form to strengthen the posterior chain. Start with bodyweight or light weights to master the movement.",
+    animation: "💪",
+  },
+];

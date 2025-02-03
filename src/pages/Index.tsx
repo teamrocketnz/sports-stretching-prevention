@@ -53,6 +53,13 @@ const Index = () => {
               path: "/jumpers-knee",
               gradient: "from-green-400 to-green-600",
             },
+            {
+              title: "Tibialis Posterior",
+              description: "Exercises for Tibialis Posterior Tendinopathy",
+              icon: <Footprints className="w-6 h-6" />,
+              path: "/tibialis-posterior",
+              gradient: "from-pink-400 to-pink-600",
+            },
           ].map((item) => (
             <button
               key={item.path}

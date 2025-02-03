@@ -8,6 +8,7 @@ import Dynamic from "./pages/Dynamic";
 import ShinSplints from "./pages/ShinSplints";
 import JumpersKnee from "./pages/JumpersKnee";
 import GeneralStretching from "./pages/GeneralStretching";
+import TibialisPosterior from "./pages/TibialisPosterior";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ const App = () => (
           <Route path="/shin-splints" element={<ShinSplints />} />
           <Route path="/jumpers-knee" element={<JumpersKnee />} />
           <Route path="/general-stretching" element={<GeneralStretching />} />
+          <Route path="/tibialis-posterior" element={<TibialisPosterior />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
