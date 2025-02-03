@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { PlayCircle, PauseCircle, SkipForward, SkipBack } from "lucide-react";
 import Timer from "@/components/Timer";
 import ExerciseDisplay from "@/components/ExerciseDisplay";
-import { generalStretchingExercises } from "@/data/exercises";
+import { generalStretchingExercises } from "@/data/generalStretchingExercises";
 
 const GeneralStretching = () => {
   const [currentExerciseIndex, setCurrentExerciseIndex] = useState(0);
