@@ -54,7 +54,7 @@ const Index = () => {
               gradient: "from-green-400 to-green-600",
             },
             {
-              title: "Tibialis Posterior",
+              title: "Tibialis Posterior (achilles)",
               description: "Exercises for Tibialis Posterior Tendinopathy",
               icon: <Footprints className="w-6 h-6" />,
               path: "/tibialis-posterior",
