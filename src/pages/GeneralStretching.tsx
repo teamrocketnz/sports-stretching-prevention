@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import { Button } from "@/components/ui/button";
 import { PlayCircle, PauseCircle, SkipForward, SkipBack } from "lucide-react";
 import Timer from "@/components/Timer";
@@ -9,23 +9,27 @@ const GeneralStretching = () => {
   const [currentExerciseIndex, setCurrentExerciseIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
 
-  const handleNext = () => {
+  const handleNext = useCallback(() => {
     setCurrentExerciseIndex((prev) => 
       prev === generalStretchingExercises.length - 1 ? 0 : prev + 1
     );
     setIsPlaying(true);
-  };
+  }, []);
 
-  const handlePrevious = () => {
+  const handlePrevious = useCallback(() => {
     setCurrentExerciseIndex((prev) => 
       prev === 0 ? generalStretchingExercises.length - 1 : prev - 1
     );
     setIsPlaying(true);
-  };
+  }, []);
 
-  const togglePlay = () => {
-    setIsPlaying(!isPlaying);
-  };
+  const togglePlay = useCallback(() => {
+    setIsPlaying((prev) => !prev);
+  }, []);
+
+  const handleTimerComplete = useCallback(() => {
+    handleNext();
+  }, [handleNext]);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-primary to-secondary p-6">
@@ -44,7 +48,7 @@ const GeneralStretching = () => {
           <Timer 
             duration={60} 
             isPlaying={isPlaying} 
-            onComplete={handleNext}
+            onComplete={handleTimerComplete}
           />
           
           <div className="flex justify-center space-x-4">
