@@ -1,5 +1,5 @@
 import React from "react";
-import { Exercise } from "@/data/exercises";
+import { Exercise } from "@/types/exercise";
 import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
 
