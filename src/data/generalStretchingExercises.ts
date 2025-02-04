@@ -34,14 +34,14 @@ export const generalStretchingExercises: Exercise[] = [
     name: "Piriformis Stretch Left",
     description: "Lie on your back, cross left ankle over right knee, pull right thigh toward chest. Hold 30 seconds.",
     animation: "🧘‍♂️",
-    image: "/lovable-uploads/5e4e1c1e-1c3e-4c3e-8c3e-1c3e1c3e1c3e.png"
+    image: "/lovable-uploads/a99b461e-b748-498f-ae4d-bdfff449286c.png"
   },
   {
     id: 6,
     name: "Piriformis Stretch Right",
     description: "Lie on your back, cross right ankle over left knee, pull left thigh toward chest. Hold 30 seconds.",
     animation: "🧘‍♂️",
-    image: "/lovable-uploads/5e4e1c1e-1c3e-4c3e-8c3e-1c3e1c3e1c3e.png"
+    image: "/lovable-uploads/a99b461e-b748-498f-ae4d-bdfff449286c.png"
   },
   {
     id: 7,
@@ -76,14 +76,14 @@ export const generalStretchingExercises: Exercise[] = [
     name: "Seated Spine Rotation Stretch Left",
     description: "Sit cross-legged, place right hand on left knee, rotate torso left. Hold 30 seconds.",
     animation: "🧘‍♀️",
-    image: "/lovable-uploads/1e4e1c1e-1c3e-4c3e-8c3e-1c3e1c3e1c3e.png"
+    image: "/lovable-uploads/bf387853-7ae7-465c-8d23-1d216878a914.png"
   },
   {
     id: 12,
     name: "Seated Spine Rotation Stretch Right",
     description: "Sit cross-legged, place left hand on right knee, rotate torso right. Hold 30 seconds.",
     animation: "🧘‍♀️",
-    image: "/lovable-uploads/1e4e1c1e-1c3e-4c3e-8c3e-1c3e1c3e1c3e.png"
+    image: "/lovable-uploads/bf387853-7ae7-465c-8d23-1d216878a914.png"
   },
   {
     id: 13,
@@ -97,48 +97,48 @@ export const generalStretchingExercises: Exercise[] = [
     name: "Happy Cow",
     description: "On hands and knees, arch back while looking up, then round back while looking down.",
     animation: "🐄",
-    image: "/lovable-uploads/1e4e1c1e-1c3e-4c3e-8c3e-1c3e1c3e1c3e.png"
+    image: "/lovable-uploads/937ed3f5-d8e4-4373-827b-7cfdea4ff317.png"
   },
   {
     id: 15,
     name: "Pigeon Pose Left",
     description: "From all fours, bring left leg forward into a bent position while extending right leg back. Hold 30 seconds.",
     animation: "🕊️",
-    image: "/lovable-uploads/1e4e1c1e-1c3e-4c3e-8c3e-1c3e1c3e1c3e.png"
+    image: "/lovable-uploads/937ed3f5-d8e4-4373-827b-7cfdea4ff317.png"
   },
   {
     id: 16,
     name: "Pigeon Pose Right",
     description: "From all fours, bring right leg forward into a bent position while extending left leg back. Hold 30 seconds.",
     animation: "🕊️",
-    image: "/lovable-uploads/1e4e1c1e-1c3e-4c3e-8c3e-1c3e1c3e1c3e.png"
+    image: "/lovable-uploads/937ed3f5-d8e4-4373-827b-7cfdea4ff317.png"
   },
   {
     id: 17,
     name: "Butterfly Pose",
     description: "Sit with feet together, knees out. Hold feet and lean forward. Hold 30 seconds.",
     animation: "🦋",
-    image: "/lovable-uploads/1e4e1c1e-1c3e-4c3e-8c3e-1c3e1c3e1c3e.png"
+    image: "/lovable-uploads/bf387853-7ae7-465c-8d23-1d216878a914.png"
   },
   {
     id: 18,
     name: "Frog Pose",
     description: "Kneel with knees wide, feet together. Keep back straight and lean forward. Hold 30 seconds.",
     animation: "🐸",
-    image: "/lovable-uploads/1e4e1c1e-1c3e-4c3e-8c3e-1c3e1c3e1c3e.png"
+    image: "/lovable-uploads/937ed3f5-d8e4-4373-827b-7cfdea4ff317.png"
   },
   {
     id: 19,
     name: "Child's Pose",
     description: "Kneel on the floor, sit back on heels, extend arms forward, and rest forehead on mat. Hold for 30 seconds.",
     animation: "🧎",
-    image: "/lovable-uploads/1e4e1c1e-1c3e-4c3e-8c3e-1c3e1c3e1c3e.png"
+    image: "/lovable-uploads/937ed3f5-d8e4-4373-827b-7cfdea4ff317.png"
   },
   {
     id: 20,
     name: "Cat-Cow Stretch",
     description: "On hands and knees, alternate between arching and rounding your back while breathing deeply. 10 repetitions.",
     animation: "🐱",
-    image: "/lovable-uploads/1e4e1c1e-1c3e-4c3e-8c3e-1c3e1c3e1c3e.png"
+    image: "/lovable-uploads/937ed3f5-d8e4-4373-827b-7cfdea4ff317.png"
   }
 ];
