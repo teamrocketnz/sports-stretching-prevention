@@ -4,10 +4,22 @@ import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
 
 interface ExerciseDisplayProps {
-  exercise: Exercise;
+  exercise?: Exercise;
 }
 
 const ExerciseDisplay: React.FC<ExerciseDisplayProps> = ({ exercise }) => {
+  if (!exercise) {
+    return (
+      <Card className="overflow-hidden bg-black/40 backdrop-blur-lg border-white/20">
+        <div className="p-6 space-y-4">
+          <div className="text-white text-center">
+            No exercise found
+          </div>
+        </div>
+      </Card>
+    );
+  }
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
