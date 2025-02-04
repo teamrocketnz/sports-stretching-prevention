@@ -5,6 +5,7 @@ import Timer from "@/components/Timer";
 import ExerciseDisplay from "@/components/ExerciseDisplay";
 import { generalStretchingExercises } from "@/data/generalStretchingExercises";
 import { useToast } from "@/components/ui/use-toast";
+import { Card } from "@/components/ui/card";
 
 const GeneralStretching = () => {
   const [currentExerciseIndex, setCurrentExerciseIndex] = useState(0);
