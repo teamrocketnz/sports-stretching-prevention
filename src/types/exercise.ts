@@ -3,4 +3,5 @@ export interface Exercise {
   name: string;
   description: string;
   animation: string;
+  image?: string;
 }

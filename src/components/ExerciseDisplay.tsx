@@ -26,10 +26,10 @@ const ExerciseDisplay: React.FC<ExerciseDisplayProps> = ({ exercise }) => {
           <p className="text-white text-base leading-relaxed">
             {exercise.description}
           </p>
-          {exercise.id === 1 && (
+          {exercise.image && (
             <img 
-              src="/lovable-uploads/a99b461e-b748-498f-ae4d-bdfff449286c.png" 
-              alt="Cook Hip Lift demonstration" 
+              src={exercise.image} 
+              alt={`${exercise.name} demonstration`} 
               className="w-48 mx-auto mt-4 rounded-lg shadow-lg"
             />
           )}
