@@ -6,7 +6,7 @@ export const floorStretches: Exercise[] = [
     name: "Happy Cow",
     description: "On hands and knees, arch back while looking up, then round back while looking down.",
     animation: "🐄",
-    image: "/lovable-uploads/3c4d3c5d-d11b-41d0-ac9a-fd181a731148.png"
+    image: "/lovable-uploads/67637e18-8ecd-4505-b25d-7833b0cd187b.png"
   },
   {
     id: 15,
