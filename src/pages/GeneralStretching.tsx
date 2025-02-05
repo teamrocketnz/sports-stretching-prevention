@@ -4,49 +4,24 @@ import { PlayCircle, PauseCircle, SkipForward, SkipBack } from "lucide-react";
 import Timer from "@/components/Timer";
 import ExerciseDisplay from "@/components/ExerciseDisplay";
 import { generalStretchingExercises } from "@/data/generalStretchingExercises";
-import { useToast } from "@/components/ui/use-toast";
-import { Card } from "@/components/ui/card";
 
 const GeneralStretching = () => {
   const [currentExerciseIndex, setCurrentExerciseIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
-  const { toast } = useToast();
-
-  console.log('Current exercises:', generalStretchingExercises);
-  console.log('Current index:', currentExerciseIndex);
-  console.log('Current exercise:', generalStretchingExercises[currentExerciseIndex]);
 
   const handleNext = useCallback(() => {
-    if (!generalStretchingExercises || generalStretchingExercises.length === 0) {
-      toast({
-        title: "No exercises available",
-        description: "Please check the exercises configuration.",
-        variant: "destructive",
-      });
-      return;
-    }
-
     setCurrentExerciseIndex((prev) => 
       prev === generalStretchingExercises.length - 1 ? 0 : prev + 1
     );
     setIsPlaying(true);
-  }, [toast]);
+  }, []);
 
   const handlePrevious = useCallback(() => {
-    if (!generalStretchingExercises || generalStretchingExercises.length === 0) {
-      toast({
-        title: "No exercises available",
-        description: "Please check the exercises configuration.",
-        variant: "destructive",
-      });
-      return;
-    }
-
     setCurrentExerciseIndex((prev) => 
       prev === 0 ? generalStretchingExercises.length - 1 : prev - 1
     );
     setIsPlaying(true);
-  }, [toast]);
+  }, []);
 
   const togglePlay = useCallback(() => {
     setIsPlaying((prev) => !prev);
@@ -55,18 +30,6 @@ const GeneralStretching = () => {
   const handleTimerComplete = useCallback(() => {
     handleNext();
   }, [handleNext]);
-
-  if (!generalStretchingExercises || generalStretchingExercises.length === 0) {
-    return (
-      <div className="min-h-screen bg-gradient-to-br from-primary to-secondary p-6">
-        <div className="max-w-md mx-auto">
-          <Card className="p-6">
-            <p className="text-center text-white">No exercises available</p>
-          </Card>
-        </div>
-      </div>
-    );
-  }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-primary to-secondary p-6">
