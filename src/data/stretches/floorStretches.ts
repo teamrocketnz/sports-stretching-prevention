@@ -28,5 +28,19 @@ export const floorStretches: Exercise[] = [
     description: "On hands and knees, alternate between arching and rounding your back while breathing deeply. 10 repetitions.",
     animation: "🐱",
     image: "/lovable-uploads/3c4d3c5d-d11b-41d0-ac9a-fd181a731148.png"
+  },
+  {
+    id: 21,
+    name: "Pigeon Pose Right",
+    description: "From all fours, bring right leg forward into a bent position while extending left leg back. Hold 30 seconds.",
+    animation: "🕊️",
+    image: "/lovable-uploads/da808b8f-466f-48a1-a53d-761be22bc9ba.png"
+  },
+  {
+    id: 22,
+    name: "Downward Dog",
+    description: "Form an inverted V with your body, pushing through your hands and feet. Hold for 30 seconds.",
+    animation: "🐕",
+    image: "/lovable-uploads/bf387853-7ae7-465c-8d23-1d216878a914.png"
   }
 ];
