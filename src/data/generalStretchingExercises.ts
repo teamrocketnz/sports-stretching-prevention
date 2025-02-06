@@ -34,14 +34,14 @@ export const generalStretchingExercises: Exercise[] = [
     name: "Piriformis Stretch Left",
     description: "Lie on your back, cross left ankle over right knee, pull right thigh toward chest. Hold 30 seconds.",
     animation: "🧘‍♂️",
-    image: "/lovable-uploads/a99b461e-b748-498f-ae4d-bdfff449286c.png"
+    image: "/lovable-uploads/0c59da79-7906-4492-afc5-f61d157a5ec0.png"
   },
   {
     id: 6,
     name: "Piriformis Stretch Right",
     description: "Lie on your back, cross right ankle over left knee, pull left thigh toward chest. Hold 30 seconds.",
     animation: "🧘‍♂️",
-    image: "/lovable-uploads/a99b461e-b748-498f-ae4d-bdfff449286c.png"
+    image: "/lovable-uploads/0c59da79-7906-4492-afc5-f61d157a5ec0.png"
   },
   {
     id: 7,
@@ -125,14 +125,14 @@ export const generalStretchingExercises: Exercise[] = [
     name: "Frog Pose",
     description: "Kneel with knees wide, feet together. Keep back straight and lean forward. Hold 30 seconds.",
     animation: "🐸",
-    image: "/lovable-uploads/a99b461e-b748-498f-ae4d-bdfff449286c.png"
+    image: "/lovable-uploads/a99b461e-b748-498f-ae4d-bbdfff449286c.png"
   },
   {
     id: 19,
     name: "Child's Pose",
     description: "Kneel on the floor, sit back on heels, extend arms forward, and rest forehead on mat. Hold for 30 seconds.",
     animation: "🧎",
-    image: "/lovable-uploads/bf387853-7ae7-465c-8d23-1d216878a914.png"
+    image: "/lovable-uploads/243bb450-2cfa-499b-b68d-13e2fc92994f.png"
   },
   {
     id: 20,
