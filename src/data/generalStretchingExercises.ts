@@ -125,7 +125,7 @@ export const generalStretchingExercises: Exercise[] = [
     name: "Frog Pose",
     description: "Kneel with knees wide, feet together. Keep back straight and lean forward. Hold 30 seconds.",
     animation: "🐸",
-    image: "/lovable-uploads/a99b461e-b748-498f-ae4d-bbdfff449286c.png"
+    image: "/lovable-uploads/145ebefc-61df-483a-b16f-c54ceca16981.png"
   },
   {
     id: 19,
