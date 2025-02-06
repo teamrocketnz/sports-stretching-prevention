@@ -76,14 +76,14 @@ export const generalStretchingExercises: Exercise[] = [
     name: "Seated Spine Rotation Stretch Left",
     description: "Sit cross-legged, place right hand on left knee, rotate torso left. Hold 30 seconds.",
     animation: "🧘‍♀️",
-    image: "/lovable-uploads/72e4decc-f5e5-4459-a90b-17138675a138.png"
+    image: "/lovable-uploads/f5ec2345-5c2b-4098-8f9a-7d34dbae33ed.png"
   },
   {
     id: 12,
     name: "Seated Spine Rotation Stretch Right",
     description: "Sit cross-legged, place left hand on right knee, rotate torso right. Hold 30 seconds.",
     animation: "🧘‍♀️",
-    image: "/lovable-uploads/72e4decc-f5e5-4459-a90b-17138675a138.png"
+    image: "/lovable-uploads/f5ec2345-5c2b-4098-8f9a-7d34dbae33ed.png"
   },
   {
     id: 13,
@@ -97,28 +97,28 @@ export const generalStretchingExercises: Exercise[] = [
     name: "Happy Cow",
     description: "On hands and knees, arch back while looking up, then round back while looking down.",
     animation: "🐄",
-    image: "/lovable-uploads/a99b461e-b748-498f-ae4d-bdfff449286c.png"
+    image: "/lovable-uploads/3ef1d465-f75d-4424-a4ed-a5185fa7be48.png"
   },
   {
     id: 15,
     name: "Pigeon Pose Left",
     description: "From all fours, bring left leg forward into a bent position while extending right leg back. Hold 30 seconds.",
     animation: "🕊️",
-    image: "/lovable-uploads/a99b461e-b748-498f-ae4d-bdfff449286c.png"
+    image: "/lovable-uploads/12af679b-e611-48ed-8cc4-4a66167631a9.png"
   },
   {
     id: 16,
     name: "Pigeon Pose Right",
     description: "From all fours, bring right leg forward into a bent position while extending left leg back. Hold 30 seconds.",
     animation: "🕊️",
-    image: "/lovable-uploads/a99b461e-b748-498f-ae4d-bdfff449286c.png"
+    image: "/lovable-uploads/12af679b-e611-48ed-8cc4-4a66167631a9.png"
   },
   {
     id: 17,
     name: "Butterfly Pose",
     description: "Sit with feet together, knees out. Hold feet and lean forward. Hold 30 seconds.",
     animation: "🦋",
-    image: "/lovable-uploads/bf387853-7ae7-465c-8d23-1d216878a914.png"
+    image: "/lovable-uploads/b135d7af-889d-4eb0-8fe2-17976ad96bb4.png"
   },
   {
     id: 18,
@@ -139,6 +139,6 @@ export const generalStretchingExercises: Exercise[] = [
     name: "Cat-Cow Stretch",
     description: "On hands and knees, alternate between arching and rounding your back while breathing deeply. 10 repetitions.",
     animation: "🐱",
-    image: "/lovable-uploads/a99b461e-b748-498f-ae4d-bdfff449286c.png"
+    image: "/lovable-uploads/e67da280-12c8-4408-8ed0-bf1d7019d67f.png"
   }
 ];
