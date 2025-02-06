@@ -95,7 +95,7 @@ export const generalStretchingExercises: Exercise[] = [
   {
     id: 14,
     name: "Happy Cow",
-    description: "On hands and knees, arch back while looking up, then round back while looking down.",
+    description: "Start on hands and knees, extend one leg back while keeping knee bent, then switch sides. Hold each side for 15 seconds to stretch hip flexors.",
     animation: "🐄",
     image: "/lovable-uploads/3ef1d465-f75d-4424-a4ed-a5185fa7be48.png"
   },
