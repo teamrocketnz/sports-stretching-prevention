@@ -17,21 +17,21 @@ const ExerciseDisplay: React.FC<ExerciseDisplayProps> = ({ exercise }) => {
       transition={{ duration: 0.3 }}
     >
       <Card className="overflow-hidden bg-white shadow-lg rounded-xl border-0">
-        <div className="p-6 space-y-6">
-          <div className="text-6xl flex justify-center items-center h-24 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg">
+        <div className="p-4 sm:p-6 space-y-4 sm:space-y-6">
+          <div className="text-5xl sm:text-6xl flex justify-center items-center h-20 sm:h-24 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg">
             {exercise.animation}
           </div>
-          <h2 className="text-3xl font-heading font-bold text-gray-800 tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-heading font-bold text-gray-800 tracking-tight">
             {exercise.name}
           </h2>
-          <p className="text-gray-600 text-lg leading-relaxed">
+          <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
             {exercise.description}
           </p>
           {exercise.image && (
             <img 
               src={exercise.image} 
               alt={`${exercise.name} demonstration`} 
-              className="w-full max-w-sm mx-auto mt-4 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-200"
+              className="w-full max-w-[280px] sm:max-w-sm mx-auto mt-4 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-200"
             />
           )}
         </div>

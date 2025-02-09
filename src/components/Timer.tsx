@@ -35,12 +35,12 @@ const Timer: React.FC<TimerProps> = ({ duration, isPlaying, onComplete }) => {
   }, [duration]);
 
   return (
-    <div className="w-full space-y-3">
+    <div className="w-full space-y-2 sm:space-y-3">
       <Progress 
         value={(timeLeft / duration) * 100} 
-        className="h-3 rounded-full bg-gray-100 shadow-sm" 
+        className="h-2.5 sm:h-3 rounded-full bg-gray-100 shadow-sm" 
       />
-      <p className="text-4xl font-bold text-center text-gray-800 font-heading">
+      <p className="text-3xl sm:text-4xl font-bold text-center text-gray-800 font-heading">
         {timeLeft}s
       </p>
     </div>
