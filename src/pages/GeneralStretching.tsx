@@ -50,8 +50,8 @@ const GeneralStretching = () => {
           General Stretching Exercises
         </h1>
         
-        <div className="bg-white rounded-lg p-6 shadow-xl space-y-6">
-          <div className="text-center text-sm text-gray-600">
+        <div className="bg-white rounded-xl p-6 shadow-lg space-y-8">
+          <div className="text-center text-sm text-gray-600 font-medium">
             Exercise {currentExerciseIndex + 1} of {generalStretchingExercises.length}
           </div>
           
@@ -63,21 +63,33 @@ const GeneralStretching = () => {
             onComplete={handleTimerComplete}
           />
           
-          <div className="flex justify-center space-x-4">
-            <Button variant="outline" onClick={handlePrevious}>
-              <SkipBack className="h-6 w-6" />
+          <div className="flex justify-center space-x-6">
+            <Button 
+              variant="outline" 
+              onClick={handlePrevious}
+              className="hover:scale-105 transition-transform duration-200 hover:bg-gray-100"
+            >
+              <SkipBack className="h-7 w-7" />
             </Button>
             
-            <Button onClick={togglePlay}>
+            <Button 
+              onClick={togglePlay}
+              className="w-16 h-16 rounded-full hover:scale-105 transition-all duration-200 hover:shadow-md hover:bg-primary/90"
+              size="lg"
+            >
               {isPlaying ? (
-                <PauseCircle className="h-6 w-6" />
+                <PauseCircle className="h-10 w-10" />
               ) : (
-                <PlayCircle className="h-6 w-6" />
+                <PlayCircle className="h-10 w-10" />
               )}
             </Button>
             
-            <Button variant="outline" onClick={handleNext}>
-              <SkipForward className="h-6 w-6" />
+            <Button 
+              variant="outline" 
+              onClick={handleNext}
+              className="hover:scale-105 transition-transform duration-200 hover:bg-gray-100"
+            >
+              <SkipForward className="h-7 w-7" />
             </Button>
           </div>
         </div>
