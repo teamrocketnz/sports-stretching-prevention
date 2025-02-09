@@ -1,13 +1,16 @@
+
 import React, { useState } from "react";
 import { exercises } from "@/data/exercises";
 import Timer from "@/components/Timer";
 import ExerciseDisplay from "@/components/ExerciseDisplay";
 import { Button } from "@/components/ui/button";
-import { PlayCircle, PauseCircle, SkipForward, SkipBack } from "lucide-react";
+import { PlayCircle, PauseCircle, SkipForward, SkipBack, ArrowLeft } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Dynamic = () => {
   const [currentExerciseIndex, setCurrentExerciseIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
+  const navigate = useNavigate();
 
   const handleNext = () => {
     setCurrentExerciseIndex((prev) => 
@@ -30,6 +33,15 @@ const Dynamic = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-primary to-secondary p-6">
       <div className="max-w-md mx-auto space-y-6">
+        <Button
+          variant="ghost"
+          className="text-white hover:text-white/80"
+          onClick={() => navigate("/")}
+        >
+          <ArrowLeft className="mr-2 h-4 w-4" />
+          Back to Home
+        </Button>
+
         <h1 className="text-3xl font-bold text-white text-center mb-8">
           Pre-Game Dynamic Stretches
         </h1>

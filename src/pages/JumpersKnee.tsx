@@ -1,13 +1,16 @@
+
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { PlayCircle, PauseCircle, SkipForward, SkipBack } from "lucide-react";
+import { PlayCircle, PauseCircle, SkipForward, SkipBack, ArrowLeft } from "lucide-react";
 import Timer from "@/components/Timer";
 import ExerciseDisplay from "@/components/ExerciseDisplay";
 import { jumpersKneeExercises } from "@/data/exercises";
+import { useNavigate } from "react-router-dom";
 
 const JumpersKnee = () => {
   const [currentExerciseIndex, setCurrentExerciseIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
+  const navigate = useNavigate();
 
   const handleNext = () => {
     setCurrentExerciseIndex((prev) => 
@@ -30,6 +33,15 @@ const JumpersKnee = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-primary to-secondary p-6">
       <div className="max-w-md mx-auto space-y-6">
+        <Button
+          variant="ghost"
+          className="text-white hover:text-white/80"
+          onClick={() => navigate("/")}
+        >
+          <ArrowLeft className="mr-2 h-4 w-4" />
+          Back to Home
+        </Button>
+
         <h1 className="text-3xl font-bold text-white text-center mb-8">
           Jumper's Knee Exercises
         </h1>
